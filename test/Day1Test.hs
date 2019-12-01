@@ -5,7 +5,7 @@ module Day1Test
 import qualified Day1
 import Test.HUnit
 
-day1Basic = TestCase(
+basic = TestCase(
     sequence_ [
         2 @=? Day1.basic [12],
         2 @=? Day1.basic [14],
@@ -14,7 +14,7 @@ day1Basic = TestCase(
         ]
     )
 
-day1Advanced = TestCase(
+advanced = TestCase(
     sequence_ [
         2 @=? Day1.advanced [14],
         966 @=? Day1.advanced [966],
@@ -23,6 +23,6 @@ day1Advanced = TestCase(
     )
 
 tests = [
-    TestLabel "Day 1 Basic" day1Basic,
-    TestLabel "Day 1 Advaced" day1Advanced
+    TestLabel "Day 1 Basic" basic,
+    TestLabel "Day 1 Advaced" advanced
     ]
