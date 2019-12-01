@@ -1,6 +1,6 @@
-module Lib
-    ( part1
-    , part2
+module Day1
+    ( basic
+    , advanced
     ) where
 
 fuelForMass :: Int -> Int
@@ -10,8 +10,8 @@ accFuelForMass :: Int -> Int
 accFuelForMass =
     sum . takeWhile (> 0) . drop 1 . iterate fuelForMass
 
-part1 :: [Int] -> Int
-part1 = sum . map fuelForMass
+basic :: [Int] -> Int
+basic = sum . map fuelForMass
 
-part2 :: [Int] -> Int
-part2 = sum . map accFuelForMass
+advanced :: [Int] -> Int
+advanced = sum . map accFuelForMass
