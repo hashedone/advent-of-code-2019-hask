@@ -24,6 +24,9 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+  - ilist
+  - split
 
 executables:
   aoc2019-exe:
