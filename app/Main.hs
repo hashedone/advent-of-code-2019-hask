@@ -1,7 +1,7 @@
 module Main where
 
-import qualified Day3
-solution = Day3.extended
+import qualified Day4
+solution = Day4.advanced
 
 main :: IO ()
 main = interact $ show . solution . lines
